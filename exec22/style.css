@@ -1,0 +1,46 @@
+/* .container{
+    background-color: #333;
+border: 3px solid red;
+padding: 15px;
+display: grid;
+grid-template-columns: 50px auto 10%;
+grid-template-rows: 70% 30px ;
+gap:5px;
+height: 35vh;
+}
+.container div{
+background-color: #ccc;
+padding: 20px;
+border: 2px solid blue;
+} */
+
+/* Templede Areas */
+.container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+   grid-template-areas: 
+   'header header header header'
+   'sidebar content content content'
+   'footer footer footer footer';
+    }
+
+    .container div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 2px solid blue;
+    } 
+    #header{
+        grid-area: header;
+    }
+    #sidebar{
+        grid-area: sidebar;
+    }
+    #content{
+        grid-area: content;
+    }
+    #footer{
+        grid-area: footer;
+    }
